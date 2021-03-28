@@ -17,6 +17,9 @@ const Header = () => {
         <S.ButtonContainer to="/found-board">
           <S.Button>습득물</S.Button>
         </S.ButtonContainer>
+        <S.ButtonContainer to="/login">
+          <S.Button>로그인</S.Button>
+        </S.ButtonContainer>
       </S.DesktopButtons>
       <S.MobileButtons></S.MobileButtons>
     </S.Header>
