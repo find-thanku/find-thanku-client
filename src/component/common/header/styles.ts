@@ -3,16 +3,18 @@ import { THEME_COLOR, BREAKPOINT } from "../../../asset/constant";
 import { Link } from "react-router-dom";
 
 export const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 5rem;
-  padding: 0rem 2rem;
-  border-bottom: 3px solid ${THEME_COLOR.VIOLET};
+  display: none;
   @media only screen and (min-width: ${BREAKPOINT}px) {
     height: 4rem;
     padding: 0rem 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 0rem 2rem;
+    border-bottom: 3px solid ${THEME_COLOR.VIOLET};
   }
 `;
 
@@ -50,11 +52,22 @@ export const Button = styled.button`
   }
 `;
 
-export const MobileButtons = styled.div`
-  height: 100%;
+export const MobileHeader = styled.div`
   display: flex;
+  justify-content: start;
   align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 3px solid ${THEME_COLOR.VIOLET};
   @media only screen and (min-width: ${BREAKPOINT}px) {
     display: none;
   }
+`;
+
+export const NavbarIcon = styled.img`
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  background: none;
+  background-color: white;
 `;

@@ -8,3 +8,7 @@ export const THEME_COLOR = {
   GRAY: "#F1F1F1",
   GRAYER: "#EDEDED",
 };
+
+export const STATIC_URL = {
+  NAVBAR: `https://user-images.githubusercontent.com/46309902/112762803-b7249e80-903c-11eb-8a6f-a427fe588aa1.png`,
+};
