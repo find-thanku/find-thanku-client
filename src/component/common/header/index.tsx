@@ -34,7 +34,7 @@ const Header = (props: HeaderProps) => {
       </S.Header>
       <S.MobileHeader>
         <S.SidebarIcon
-          src={STATIC_URL.NAVBAR}
+          src={STATIC_URL.SIDEBAR}
           alt="navbar"
           onClick={toggleSidebar}
         />
