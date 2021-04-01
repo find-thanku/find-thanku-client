@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 export const Header = styled.div`
   display: none;
   @media only screen and (min-width: ${BREAKPOINT}px) {
-    height: 4rem;
-    padding: 0rem 5rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +59,7 @@ export const MobileHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 1rem);
   height: 4rem;
   padding: 0rem 1rem;
   border-bottom: 3px solid ${THEME_COLOR.VIOLET};
@@ -82,7 +79,6 @@ export const SidebarIcon = styled.img`
 export const LoginContainer = styled(Link)`
   display: flex;
   justify-content: center;
-  /* margin-right: 1rem; */
   text-decoration: none;
   color: inherit;
 `;
