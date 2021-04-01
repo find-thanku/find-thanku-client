@@ -19,7 +19,8 @@ export const Header = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  display: block;
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   color: inherit;
 `;
@@ -59,7 +60,7 @@ export const Button = styled.button`
 
 export const MobileHeader = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 4rem;
@@ -75,4 +76,17 @@ export const SidebarIcon = styled.img`
   font-size: 1rem;
   background: none;
   background-color: white;
+`;
+
+export const LoginContainer = styled(Link)`
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+`;
+
+export const Login = styled.img`
+  width: 2rem;
+  height: 2rem;
 `;

@@ -42,6 +42,9 @@ const Header = (props: HeaderProps) => {
         <S.LogoContainer to="/">
           <S.Logo src={STATIC_URL.LOGO} alt="logo" />
         </S.LogoContainer>
+        <S.LoginContainer to="/login">
+          <S.Login src={STATIC_URL.LOGIN} alt="login" />
+        </S.LoginContainer>
       </S.MobileHeader>
     </>
   );
