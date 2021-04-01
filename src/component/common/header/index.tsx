@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 import { STATIC_URL } from "../../../asset/constant";
-import Sidebar from "../navbar";
+import Sidebar from "../sidebar";
 import { HeaderProps } from "./types";
 
 const Header = (props: HeaderProps) => {
