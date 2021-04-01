@@ -16,12 +16,18 @@ const Navbar = (props: HeaderProps) => {
             onClick={showSidebar}
           />
         </S.ButtonContainer>
-        <S.NavbarMenus>
+        <S.NavbarMenus onClick={showSidebar}>
           <S.NavbarMenu to="/">
             <S.MenuText>Home</S.MenuText>
           </S.NavbarMenu>
-          <S.NavbarMenu to="/">
+          <S.NavbarMenu to="/notice">
             <S.MenuText>공지사항</S.MenuText>
+          </S.NavbarMenu>
+          <S.NavbarMenu to="/lost-board">
+            <S.MenuText>분실물</S.MenuText>
+          </S.NavbarMenu>
+          <S.NavbarMenu to="/found-board">
+            <S.MenuText>습득물</S.MenuText>
           </S.NavbarMenu>
         </S.NavbarMenus>
       </S.Navbar>
