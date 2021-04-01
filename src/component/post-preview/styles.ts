@@ -13,7 +13,6 @@ export const PostPreview = styled.div`
 
 export const TitleContainer = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: calc(100% - 2rem);
   padding-bottom: 0.3rem;
@@ -21,6 +20,8 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.div`
+  /* display: flex;
+  align-items: center; */
   padding-bottom: 0.3rem;
   font-size: 1.2rem;
   font-weight: bold;
