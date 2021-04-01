@@ -51,14 +51,16 @@ export const SidebarMenu = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 4rem);
   height: 2rem;
-  padding: 1rem 0rem;
+  margin: 0rem 2rem;
+  padding: 2rem 0rem;
   text-decoration: none;
   color: white;
+  border-bottom: 1px solid white;
 
   &:hover {
-    background-color: black;
+    background-color: ${THEME_COLOR.DARK_VIOLET};
   }
 `;
 
