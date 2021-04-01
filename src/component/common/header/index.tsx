@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 import { STATIC_URL } from "../../../asset/constant";
-import Navbar from "../navbar";
+import Sidebar from "../navbar";
 import { HeaderProps } from "./types";
 
 const Header = (props: HeaderProps) => {
   const [show, setShow] = useState(false);
 
-  const showSidebar = () => {
+  const toggleSidebar = () => {
     setShow(!show);
   };
 
@@ -33,12 +33,12 @@ const Header = (props: HeaderProps) => {
         </S.DesktopButtons>
       </S.Header>
       <S.MobileHeader>
-        <S.NavbarIcon
+        <S.SidebarIcon
           src={STATIC_URL.NAVBAR}
           alt="navbar"
-          onClick={showSidebar}
+          onClick={toggleSidebar}
         />
-        <Navbar show={show} showSidebar={showSidebar} />
+        <Sidebar show={show} toggleSidebar={toggleSidebar} />
       </S.MobileHeader>
     </>
   );

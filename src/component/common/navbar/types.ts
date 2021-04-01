@@ -1,4 +1,4 @@
-export interface NavbarProps {
+export interface SidebarProps {
   show?: boolean;
-  showSidebar?: (show: boolean) => void;
+  toggleSidebar?: (show: boolean) => void;
 }

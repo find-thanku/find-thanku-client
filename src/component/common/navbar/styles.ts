@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { THEME_COLOR } from "../../../asset/constant";
 import { Link } from "react-router-dom";
 
-interface NavbarProps {
+interface SidebarProps {
   active?: boolean;
 }
 
-export const Navbar = styled.div<NavbarProps>`
+export const Sidebar = styled.div<SidebarProps>`
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -34,7 +34,7 @@ export const CloseButton = styled.img`
   background-color: white;
 `;
 
-export const NavbarMenus = styled.div`
+export const SidebarMenus = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@ export const NavbarMenus = styled.div`
   height: 80%;
 `;
 
-export const NavbarMenu = styled(Link)`
+export const SidebarMenu = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;

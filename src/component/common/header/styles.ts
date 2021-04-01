@@ -64,7 +64,7 @@ export const MobileHeader = styled.div`
   }
 `;
 
-export const NavbarIcon = styled.img`
+export const SidebarIcon = styled.img`
   width: 3rem;
   height: 3rem;
   font-size: 1rem;

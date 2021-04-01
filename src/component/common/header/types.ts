@@ -1,4 +1,4 @@
 export interface HeaderProps {
   show?: boolean;
-  showSidebar?: () => void;
+  toggleSidebar?: () => void;
 }
