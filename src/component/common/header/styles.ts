@@ -59,7 +59,7 @@ export const MobileHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 1rem);
+  width: 100%;
   height: 4rem;
   padding: 0rem 1rem;
   border-bottom: 3px solid ${THEME_COLOR.VIOLET};
