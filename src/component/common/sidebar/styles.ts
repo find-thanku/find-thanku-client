@@ -11,23 +11,27 @@ export const Sidebar = styled.div<SidebarProps>`
   flex-direction: column;
   width: 60%;
   height: 60%;
-  justify-content: center;
   position: fixed;
+  z-index: 1100;
   top: 0;
-  margin: 2rem;
-  background-color: ${THEME_COLOR.VIOLET};
   left: ${(props) => (props.active ? "-100%" : "0")};
+  box-shadow: ${(props) =>
+    props.active ? "none" : "rgba(0, 0, 0, 0.5) 0 0 0 100vh"};
+  background-color: ${THEME_COLOR.VIOLET};
   transition: ${(props) => (props.active ? "350ms" : "850ms")};
 `;
 
 export const ButtonContainer = styled.div`
   display: flex;
+  align-items: center;
   justify-content: flex-end;
+  height: 4.03rem;
+  background-color: white;
 `;
 
 export const CloseButton = styled.img`
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 1rem;
   font-size: 1rem;
   background: none;
