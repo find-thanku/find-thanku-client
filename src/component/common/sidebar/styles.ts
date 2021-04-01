@@ -63,5 +63,6 @@ export const SidebarMenu = styled(Link)`
 `;
 
 export const MenuText = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 `;
