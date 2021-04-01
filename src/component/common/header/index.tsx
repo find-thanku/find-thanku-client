@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import * as S from "./styles";
 import { STATIC_URL } from "../../../asset/constant";
 import Navbar from "../navbar";
+import { HeaderProps } from "./types";
 
-const Header = () => {
+const Header = (props: HeaderProps) => {
   const [show, setShow] = useState(false);
 
   const showSidebar = () => {
@@ -37,7 +38,7 @@ const Header = () => {
           alt="navbar"
           onClick={showSidebar}
         />
-        <Navbar show={show} />
+        <Navbar show={show} showSidebar={showSidebar} />
       </S.MobileHeader>
     </>
   );

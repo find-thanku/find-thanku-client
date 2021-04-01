@@ -8,16 +8,30 @@ interface NavbarProps {
 
 export const Navbar = styled.div<NavbarProps>`
   display: flex;
+  flex-direction: column;
   width: 60%;
   height: 60%;
   justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   margin: 2rem;
   background-color: ${THEME_COLOR.VIOLET};
   left: ${(props) => (props.active ? "-100%" : "0")};
   transition: ${(props) => (props.active ? "350ms" : "850ms")};
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const CloseButton = styled.img`
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  background: none;
+  background-color: white;
 `;
 
 export const NavbarMenus = styled.div`

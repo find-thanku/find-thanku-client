@@ -11,4 +11,5 @@ export const THEME_COLOR = {
 
 export const STATIC_URL = {
   NAVBAR: `https://user-images.githubusercontent.com/46309902/112762803-b7249e80-903c-11eb-8a6f-a427fe588aa1.png`,
+  CLOSE_BUTTON: `https://user-images.githubusercontent.com/46309902/113267220-0d316480-9311-11eb-8044-e985c91d4aef.png`,
 };

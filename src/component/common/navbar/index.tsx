@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./styles";
-import { NavbarProps } from "./types";
+import { HeaderProps } from "../header/types";
+import { STATIC_URL } from "../../../asset/constant";
 
-const Navbar = (props: NavbarProps) => {
-  const { show } = props;
+const Navbar = (props: HeaderProps) => {
+  const { show, showSidebar } = props;
+
   return (
     <>
       <S.Navbar active={show}>
+        <S.ButtonContainer>
+          <S.CloseButton
+            src={STATIC_URL.CLOSE_BUTTON}
+            alt="navbar"
+            onClick={showSidebar}
+          />
+        </S.ButtonContainer>
         <S.NavbarMenus>
           <S.NavbarMenu to="/">
             <S.MenuText>Home</S.MenuText>
