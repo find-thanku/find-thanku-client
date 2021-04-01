@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BREAKPOINT, THEME_COLOR } from "../../asset/constant";
+import { THEME_COLOR } from "../../asset/constant";
 
 export const PostPreview = styled.div`
   display: flex;
@@ -7,8 +7,8 @@ export const PostPreview = styled.div`
   justify-content: center;
   width: 18rem;
   height: 10rem;
-  background-color: ${THEME_COLOR.GRAYER};
   margin: 1rem 0rem;
+  background-color: ${THEME_COLOR.GRAY};
 `;
 
 export const TitleContainer = styled.div`
@@ -37,7 +37,6 @@ export const Post = styled.div`
   margin: 0rem 1rem;
   padding: 0.3rem 0rem;
   font-size: 1rem;
-  /* font-weight: bold; */
   border-bottom: 0.8px solid black;
 `;
 
