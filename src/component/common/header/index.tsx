@@ -14,9 +14,9 @@ const Header = (props: HeaderProps) => {
   return (
     <>
       <S.Header>
-        <S.Logo to="/">
-          <div>FIN:D thanKU</div>
-        </S.Logo>
+        <S.LogoContainer to="/">
+          <S.Logo src={STATIC_URL.LOGO} alt="logo" />
+        </S.LogoContainer>
         <S.DesktopButtons>
           <S.ButtonContainer to="/notice">
             <S.Button>공지사항</S.Button>
@@ -39,6 +39,9 @@ const Header = (props: HeaderProps) => {
           onClick={toggleSidebar}
         />
         <Sidebar show={show} toggleSidebar={toggleSidebar} />
+        <S.LogoContainer to="/">
+          <S.Logo src={STATIC_URL.LOGO} alt="logo" />
+        </S.LogoContainer>
       </S.MobileHeader>
     </>
   );
