@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { BREAKPOINT, THEME_COLOR } from "../../asset/constant";
 
 export const PostPreview = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 18rem;
   height: 10rem;
   background-color: ${THEME_COLOR.GRAYER};
@@ -13,7 +16,6 @@ export const TitleContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   width: calc(100% - 2rem);
-  padding-top: 1rem;
   padding-bottom: 0.3rem;
   margin: 0rem 1rem;
 `;
