@@ -16,7 +16,7 @@ export const Sidebar = styled.div<SidebarProps>`
   top: 0;
   left: ${(props) => (props.active ? "-100%" : "0")};
   box-shadow: ${(props) =>
-    props.active ? "none" : "rgba(0, 0, 0, 0.5) 0 0 0 100vh"};
+    props.active ? "none" : "rgba(0, 0, 0, 0.65) 0 0 0 100vh"};
   background-color: ${THEME_COLOR.VIOLET};
   transition: ${(props) => (props.active ? "350ms" : "850ms")};
 `;

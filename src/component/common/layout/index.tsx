@@ -6,10 +6,11 @@ interface LayoutProps {
   children?: React.ReactNode;
 }
 
-const Layout = (children: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <S.Layout>
       <Header />
+      <S.LayoutContainer>{children}</S.LayoutContainer>
     </S.Layout>
   );
 };
