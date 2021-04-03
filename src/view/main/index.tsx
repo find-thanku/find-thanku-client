@@ -1,9 +1,10 @@
 import React from "react";
+import MainContainer from "../../container/main-container/index";
 
 const MainPage = () => {
   return (
     <>
-      <div>Main Page</div>
+      <MainContainer />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as S from "./styles";
 import { HeaderProps } from "../header/types";
 import { STATIC_URL } from "../../../asset/constant";
