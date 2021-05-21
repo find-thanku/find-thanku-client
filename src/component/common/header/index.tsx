@@ -15,7 +15,7 @@ const Header = (props: HeaderProps) => {
     <>
       <S.Header>
         <S.LogoContainer to="/">
-          <S.Logo src={STATIC_URL.LOGO} alt="logo" />
+          <S.Logo>FIN:D THANKU</S.Logo>
         </S.LogoContainer>
         <S.DesktopButtons>
           <S.ButtonContainer to="/notice">
@@ -40,7 +40,7 @@ const Header = (props: HeaderProps) => {
         />
         <Sidebar show={show} toggleSidebar={toggleSidebar} />
         <S.LogoContainer to="/">
-          <S.Logo src={STATIC_URL.LOGO} alt="logo" />
+          <S.Logo>FIN:D THANKU</S.Logo>
         </S.LogoContainer>
         <S.LoginContainer to="/login">
           <S.Login src={STATIC_URL.LOGIN} alt="login" />
