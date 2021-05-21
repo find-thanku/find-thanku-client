@@ -22,9 +22,10 @@ export const LogoContainer = styled(Link)`
   color: inherit;
 `;
 
-export const Logo = styled.img`
-  width: 6rem;
-  height: 3rem;
+export const Logo = styled.div`
+  font-size: 1.3rem;
+  font-weight: 1000;
+  color: ${THEME_COLOR.DARK_VIOLET};
 `;
 
 export const DesktopButtons = styled.div`
