@@ -7,6 +7,7 @@ export const THEME_COLOR = {
   DARK_VIOLET: "#424874",
   GRAY: "#F1F1F1",
   GRAYER: "#EDEDED",
+  CRIMSON: "#9C1817",
 };
 
 export const STATIC_URL = {
@@ -15,4 +16,5 @@ export const STATIC_URL = {
   SIDEBAR: `https://user-images.githubusercontent.com/46309902/113338256-d5074180-9363-11eb-99c1-f6802837b950.png`,
   CLOSE_BUTTON: `https://user-images.githubusercontent.com/46309902/113331998-979eb600-935b-11eb-83b3-127197693e22.png`,
   PLUS_ICON: `https://user-images.githubusercontent.com/46309902/113357978-e8280a80-937f-11eb-8a0d-5febbe16056f.png`,
+  WARN: `https://user-images.githubusercontent.com/46309902/119188852-3ae78e00-bab6-11eb-9781-246121926a09.png`,
 };
