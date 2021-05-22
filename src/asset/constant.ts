@@ -17,4 +17,6 @@ export const STATIC_URL = {
   CLOSE_BUTTON: `https://user-images.githubusercontent.com/46309902/113331998-979eb600-935b-11eb-83b3-127197693e22.png`,
   PLUS_ICON: `https://user-images.githubusercontent.com/46309902/113357978-e8280a80-937f-11eb-8a0d-5febbe16056f.png`,
   WARN: `https://user-images.githubusercontent.com/46309902/119188852-3ae78e00-bab6-11eb-9781-246121926a09.png`,
+  LOCATION: `https://user-images.githubusercontent.com/46309902/119208441-2965ac80-badd-11eb-963d-323f1d829af1.png`,
+  ITEM: `https://user-images.githubusercontent.com/46309902/119210128-a09f3e80-bae5-11eb-9ca6-0c7aff8b3a41.png`,
 };
