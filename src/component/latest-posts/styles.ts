@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { THEME_COLOR } from "../../asset/constant";
 
-export const PostPreview = styled.div`
+export const LatestPosts = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
