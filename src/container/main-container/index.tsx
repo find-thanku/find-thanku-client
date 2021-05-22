@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import PostPreview from "../../component/post-preview";
+import LatestPosts from "../../component/latest-posts";
 
 const MainContainer = () => {
   return (
@@ -8,9 +8,9 @@ const MainContainer = () => {
       <S.Intro>
         <div>프로젝트 설명</div>
       </S.Intro>
-      <PostPreview title={"공지사항"} />
-      <PostPreview title={"분실물"} />
-      <PostPreview title={"습득물"} />
+      <LatestPosts title={"공지사항"} />
+      <LatestPosts title={"분실물"} />
+      <LatestPosts title={"습득물"} />
     </S.MainContainer>
   );
 };

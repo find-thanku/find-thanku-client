@@ -1,9 +1,10 @@
 import React from "react";
+import FoundBoardContainer from "../../container/found-board-container/index";
 
 const FoundBoard = () => {
   return (
     <>
-      <div>Found Board</div>
+      <FoundBoardContainer />
     </>
   );
 };
