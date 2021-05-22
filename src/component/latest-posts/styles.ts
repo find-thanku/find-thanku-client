@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { THEME_COLOR } from "../../asset/constant";
 
-export const PostPreview = styled.div`
+export const LatestPosts = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,8 +20,6 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  /* display: flex;
-  align-items: center; */
   padding-bottom: 0.3rem;
   font-size: 1.2rem;
   font-weight: bold;
