@@ -1,35 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./styles";
 import FoundPostPreview from "../../component/found-post-preview";
+import foundBoardAPI from "../../common/lib/api/found-board";
+import { FoundPostModel } from "../../common/model/found-post";
 
 const FoundBoardContainer = () => {
+  const [page, setPage] = useState(1);
+  const [data, setData] = useState([] as FoundPostModel[]);
+
+  const getPostList = async (page: number) => {
+    const result = await foundBoardAPI.getPostList(page);
+    const data = result.data;
+    setData(data);
+  };
+
+  useEffect(() => {
+    getPostList(page);
+  }, [page]);
+
   return (
     <S.FoundBoardContainer>
       <S.Category>습득물</S.Category>
-      <FoundPostPreview
-        title={"미래관 3층에서 지갑을 찾았어요"}
-        item={"지갑"}
-        location={"미래관"}
-        replyCount={5}
-      />
-      <FoundPostPreview
-        title={"미래관 3층에 에어팟 놔두고 가신 분"}
-        item={"에어팟"}
-        location={"미래관"}
-        image={
-          "https://user-images.githubusercontent.com/46309902/119209525-143f4c80-bae2-11eb-8053-14a5d09853c6.PNG"
-        }
-        replyCount={5}
-      />
-      <FoundPostPreview
-        title={"초록색 공룡 그려진 에어팟 케이스"}
-        item={"에어팟"}
-        location={"미래관"}
-        image={
-          "https://user-images.githubusercontent.com/46309902/119209525-143f4c80-bae2-11eb-8053-14a5d09853c6.PNG"
-        }
-        replyCount={5}
-      />
+      {data &&
+        data.map((post, idx) => {
+          const { title, item_name, get_place, reply_num } = post;
+          return (
+            <FoundPostPreview
+              key={idx}
+              title={title}
+              item={item_name}
+              location={get_place}
+              replyCount={reply_num}
+            />
+          );
+        })}
     </S.FoundBoardContainer>
   );
 };
