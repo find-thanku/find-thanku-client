@@ -21,4 +21,5 @@ export const STATIC_URL = {
   ITEM: `https://user-images.githubusercontent.com/46309902/119210128-a09f3e80-bae5-11eb-9ca6-0c7aff8b3a41.png`,
   WHITE_PLUS_ICON: `https://user-images.githubusercontent.com/46309902/129130829-4d342427-719b-4bc6-9f2c-f0fbdae92689.png`,
   SEARCH: `https://user-images.githubusercontent.com/46309902/129131150-946eb4c8-48f9-4cf7-9aef-18bdc58bf0cc.png`,
+  CLOSE: `https://user-images.githubusercontent.com/46309902/129339675-68bfa4f4-4f6e-4b9d-9828-784964c188f0.png`,
 };
