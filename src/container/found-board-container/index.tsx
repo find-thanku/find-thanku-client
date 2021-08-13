@@ -8,11 +8,16 @@ import { STATIC_URL } from "../../asset/constant";
 const FoundBoardContainer = () => {
   const [page, setPage] = useState(1);
   const [data, setData] = useState([] as FoundPostModel[]);
+  const [searchClicked, setSearchClicked] = useState(false);
 
   const getPostList = async (page: number) => {
     const result = await foundBoardAPI.getPostList(page);
     const data = result.data;
     setData(data);
+  };
+
+  const toggleSearch = () => {
+    setSearchClicked(!searchClicked);
   };
 
   useEffect(() => {
@@ -22,7 +27,19 @@ const FoundBoardContainer = () => {
   return (
     <S.FoundBoardContainer>
       <S.CategoryContainer>
-        <S.Category>습득물</S.Category>
+        <S.Category searchClicked={searchClicked}>습득물</S.Category>
+        <S.SearchContainer searchClicked={searchClicked}>
+          <S.SearchIcon src={STATIC_URL.SEARCH} onClick={toggleSearch} />
+          <S.SearchInput
+            searchClicked={searchClicked}
+            placeholder="검색어를 입력해 주세요"
+          />
+          <S.CloseIcon
+            searchClicked={searchClicked}
+            src={STATIC_URL.CLOSE}
+            onClick={toggleSearch}
+          />
+        </S.SearchContainer>
       </S.CategoryContainer>
       <S.PostContainer>
         {data &&
