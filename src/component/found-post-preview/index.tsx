@@ -7,9 +7,12 @@ const FoundPostPreview = (props: FoundPostPreviewProps) => {
   const { title, item, location, image, replyCount } = props;
   return (
     <S.FoundPostPreview>
-      <S.Title>
-        {title} ({replyCount})
-      </S.Title>
+      <S.TitleContainer>
+        <S.Title>{title}</S.Title>
+        <S.ReplyContainer>
+          <S.Reply>{replyCount}</S.Reply>
+        </S.ReplyContainer>
+      </S.TitleContainer>
       <S.Contents>
         <S.ItemInfo>
           <S.ItemContainer>

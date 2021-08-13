@@ -44,7 +44,7 @@ const FoundBoardContainer = () => {
       <S.PostContainer>
         {data &&
           data.map((post, idx) => {
-            const { title, item_name, get_place, reply_num } = post;
+            const { title, item_name, get_place, reply_num, image_url } = post;
             return (
               <FoundPostPreview
                 key={idx}
@@ -52,6 +52,7 @@ const FoundBoardContainer = () => {
                 item={item_name}
                 location={get_place}
                 replyCount={reply_num}
+                image={image_url}
               />
             );
           })}

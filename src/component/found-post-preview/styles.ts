@@ -14,13 +14,36 @@ export const FoundPostPreview = styled.div`
   box-shadow: 0.1rem 0.1rem 0.2rem 0.05rem ${THEME_COLOR.DARK_VIOLET};
 `;
 
-export const Title = styled.div`
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 1.7rem;
+  font-weight: bold;
+`;
+
+export const Title = styled.div`
+  width: 85%;
+  font-size: 1.2rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 1.2rem;
-  font-weight: bold;
+`;
+
+export const ReplyContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #d3d8f0;
+  border-radius: 50%;
+`;
+
+export const Reply = styled.div`
+  font-size: 1rem;
+  color: ${THEME_COLOR.DARK_VIOLET};
 `;
 
 export const Contents = styled.div`
@@ -63,5 +86,5 @@ export const Location = styled.div`
 export const Image = styled.img`
   height: 3.5rem;
   width: 3.5rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 `;
