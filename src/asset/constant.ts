@@ -19,4 +19,7 @@ export const STATIC_URL = {
   WARN: `https://user-images.githubusercontent.com/46309902/119188852-3ae78e00-bab6-11eb-9781-246121926a09.png`,
   LOCATION: `https://user-images.githubusercontent.com/46309902/119208441-2965ac80-badd-11eb-963d-323f1d829af1.png`,
   ITEM: `https://user-images.githubusercontent.com/46309902/119210128-a09f3e80-bae5-11eb-9ca6-0c7aff8b3a41.png`,
+  BACK_BUTTON: `https://user-images.githubusercontent.com/50616334/119186114-99127200-bab2-11eb-999b-5ba29212960f.png`,
+  PHOTO: `https://user-images.githubusercontent.com/50616334/119203057-26fb5680-bacd-11eb-9735-ce91154a9815.png`,
+  PHOTO_WHITE: `https://user-images.githubusercontent.com/50616334/119206697-e1dc2200-bad6-11eb-9b09-5e784a7fd72d.png`,
 };
