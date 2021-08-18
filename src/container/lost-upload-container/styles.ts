@@ -4,7 +4,6 @@ import { THEME_COLOR } from "../../asset/constant";
 export const Wrapper = styled.div`
   display: flex;
   width: 100%;
-  min-width: 380px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

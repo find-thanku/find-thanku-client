@@ -41,7 +41,7 @@ export const SubmitButton = styled.div`
   padding: 0.2rem;
   border-radius: 0.6rem;
 
-  font-size: 1rem;
-  color: white;
-  background-color: ${THEME_COLOR.VIOLET};
+  font-size: 1.1rem;
+  color: ${THEME_COLOR.VIOLET};
+  font-weight: bolder;
 `;

@@ -7,8 +7,8 @@ const UploadHeader = () => {
     <>
       <S.MobileHeader>
         <S.BackIcon src={STATIC_URL.BACK_BUTTON} alt="back" />
-        <S.Title>글 쓰기</S.Title>
-        <S.SubmitButton>완료</S.SubmitButton>
+        <S.Title>글쓰기</S.Title>
+        <S.SubmitButton>등록</S.SubmitButton>
       </S.MobileHeader>
     </>
   );
