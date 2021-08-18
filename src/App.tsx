@@ -5,6 +5,7 @@ import Layout from "../src/component/common/layout";
 import MainPage from "../src/view/main/index";
 import Notice from "../src/view/notice/index";
 import LostBoard from "../src/view/lost-board/index";
+import LostUpload from "../src/view/lost-upload";
 import FoundBoard from "../src/view/found-board/index";
 import Login from "../src/view/login/index";
 
@@ -17,6 +18,7 @@ const App: React.FC = () => (
           <Route path="/" exact component={MainPage} />
           <Route path="/notice" exact component={Notice} />
           <Route path="/lost-board" exact component={LostBoard} />
+          <Route path="/lost-board/upload" exact component={LostUpload} />
           <Route path="/found-board" exact component={FoundBoard} />
           <Route path="/login" exact component={Login} />
           <Redirect from="*" to="/" />
