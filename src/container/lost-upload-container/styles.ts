@@ -32,22 +32,14 @@ export const Title = styled.div`
   width: 100%;
   font-size: 1rem;
   font-weight: bold;
-  /* border-bottom: 0.1rem solid ${THEME_COLOR.VIOLET}; */
   margin-bottom: 0.3rem;
-
 `;
 
 export const InputBox = styled.input`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-
   width: 100%;
   height: 1.8rem;
 
   font-size: 1rem;
-  /* resize: vertical; */
   outline: none;
 
   border: 1px solid ${THEME_COLOR.GRAYER};
@@ -58,24 +50,16 @@ export const InputBox = styled.input`
 
 export const ItemContainer = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
-  
   margin-bottom: 1rem;
-
 `;
 
 export const TypeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: space-between; */
   width: 50%;
-  /* padding-right: 0.4rem; */
-
   margin: 0rem 0.4rem 0rem 0rem;
 
 `;
@@ -83,8 +67,8 @@ export const TypeContainer = styled.div`
 export const SubText = styled.div`
   font-size: 1rem;
   font-weight: bold;
-  /* border-bottom: 0.1rem solid ${THEME_COLOR.VIOLET}; */
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 
 `;
 
@@ -99,12 +83,10 @@ export const TypeOptions = styled.select`
   border-radius: 0.5rem;
 
   padding: 0.1rem;
-
 `;
 
 export const Option = styled.option`
   border: 1px solid ${THEME_COLOR.LIGHT_VIOLET};
-
 `;
 
 export const ContentBox = styled.textarea`
@@ -188,7 +170,6 @@ export const PhotoContainer = styled.div`
   margin: 0rem 1rem 3rem 0rem;
   font-size: 0.8rem;
   font-weight: bold;
-  /* border: 1px solid black; */
 `;
 
 export const Photo = styled.img`

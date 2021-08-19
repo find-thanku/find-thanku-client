@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import Select from "react-select";
+import { THEME_COLOR } from "../../asset/constant";
 
 const ItemSelectBox = ()  => {
   const options = useMemo(
@@ -14,7 +15,21 @@ const ItemSelectBox = ()  => {
   return (
       <>
       <Select 
-        style={{width: `100%`}}
+        maxMenuHeight = {110}
+        placeholder="Select"
+        styles={{
+          option: (provided, state) => ({
+            ...provided,
+            color: state.isSelected ? 'white' : 'grayer',
+            backgroundColor: state.isSelected ? `${THEME_COLOR.VIOLET}` : 'white',
+          }),
+          control: (base, state) => ({
+              ...base,
+              '&:hover': { borderColor: 'gray'}, // border style on hover
+              border: '1px solid lightgray', // default border color
+              boxShadow: 'none', // no box-shadow
+          }),
+        }}
         options={options}/>
       </>
   );
