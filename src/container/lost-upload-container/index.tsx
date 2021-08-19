@@ -10,10 +10,6 @@ const LostUploadContainer = () => {
     <S.Wrapper>
       <UploadHeader/>
         <S.UploadContainer>
-          <S.TitleContainer>
-            <S.Title>제목</S.Title>
-            <S.InputBox/>
-          </S.TitleContainer>
           <S.ItemContainer>
             <S.TypeContainer>
                 <S.SubText>분실물</S.SubText>
@@ -24,7 +20,10 @@ const LostUploadContainer = () => {
                 <PlaceSelectBox/>
             </S.TypeContainer>
           </S.ItemContainer>
-          <S.ContentBox placeholder="내용을 입력해 주세요"/>
+          <S.TitleContainer>
+            <S.InputBox placeholder="제목을 입력해 주세요."/>
+          </S.TitleContainer>
+          <S.ContentBox placeholder="내용을 입력해 주세요."/>
           <label>
             <S.ImageInput
               type="file"

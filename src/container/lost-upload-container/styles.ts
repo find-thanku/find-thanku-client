@@ -24,27 +24,20 @@ export const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
-`;
-
-export const Title = styled.div`
-  width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.3rem;
 `;
 
 export const InputBox = styled.input`
   width: 100%;
-  height: 1.8rem;
+  height: 2.2rem;
 
   font-size: 1rem;
   outline: none;
 
   border: 1px solid ${THEME_COLOR.GRAYER};
-  border-radius: 0.5rem;
-  padding: 0.2rem;
+  border-radius: 0.1rem;
+  padding: 0.5rem;
 
 `;
 
@@ -69,24 +62,6 @@ export const SubText = styled.div`
   font-weight: bold;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
-
-`;
-
-export const TypeOptions = styled.select`
-  width: 6.2rem;
-  height: 1.5rem;
-
-  font-size: 1rem;
-  color: ${THEME_COLOR.VIOLET};
-
-  border: 1px solid ${THEME_COLOR.VIOLET};
-  border-radius: 0.5rem;
-
-  padding: 0.1rem;
-`;
-
-export const Option = styled.option`
-  border: 1px solid ${THEME_COLOR.LIGHT_VIOLET};
 `;
 
 export const ContentBox = styled.textarea`
@@ -103,8 +78,8 @@ export const ContentBox = styled.textarea`
   outline: none;
 
   border: 1px solid ${THEME_COLOR.GRAYER};
-  border-radius: 0.5rem;
-  padding: 0.2rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
 
 `;
@@ -155,7 +130,6 @@ export const ImageButton = styled.button`
 `;
 
 export const PhotoContainer = styled.div`
-  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
