@@ -1,9 +1,10 @@
 import React from "react";
+import NoticeBoardContainer from "../../container/notice-board-container/index";
 
 const NoticeBoard = () => {
   return (
     <>
-      <div>Notice Board</div>
+      <NoticeBoardContainer />
     </>
   );
 };
