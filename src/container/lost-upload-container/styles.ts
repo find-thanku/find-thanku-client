@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const UploadContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 375px;
   padding: 0.8rem 1rem;
 `;
 
