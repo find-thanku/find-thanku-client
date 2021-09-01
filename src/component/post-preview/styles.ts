@@ -86,5 +86,4 @@ export const Location = styled.div`
 export const Image = styled.img`
   height: 3.5rem;
   width: 3.5rem;
-  /* margin-right: 1rem; */
 `;
