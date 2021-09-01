@@ -20,7 +20,7 @@ const Sidebar = (props: HeaderProps) => {
           <S.SidebarMenu to="/">
             <S.MenuText>Home</S.MenuText>
           </S.SidebarMenu>
-          <S.SidebarMenu to="/notice">
+          <S.SidebarMenu to="/notice-board">
             <S.MenuText>공지사항</S.MenuText>
           </S.SidebarMenu>
           <S.SidebarMenu to="/lost-board">
