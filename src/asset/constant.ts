@@ -22,4 +22,7 @@ export const STATIC_URL = {
   BACK_BUTTON: `https://user-images.githubusercontent.com/50616334/119186114-99127200-bab2-11eb-999b-5ba29212960f.png`,
   PHOTO: `https://user-images.githubusercontent.com/50616334/119203057-26fb5680-bacd-11eb-9735-ce91154a9815.png`,
   PHOTO_WHITE: `https://user-images.githubusercontent.com/50616334/119206697-e1dc2200-bad6-11eb-9b09-5e784a7fd72d.png`,
+  CAMERA: `https://user-images.githubusercontent.com/50616334/131724701-679fdcde-df00-40de-bd74-c9df11966278.png`,
+  X_MARK: `https://user-images.githubusercontent.com/50616334/131725487-3380d77a-3d24-4822-bc3a-b8f02283a5b1.png`,
+  X_MARK_WHITE: `https://user-images.githubusercontent.com/50616334/131726258-50e42b72-e282-43cb-9e53-a2371018e0cc.png`,
 };

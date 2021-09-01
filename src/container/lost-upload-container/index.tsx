@@ -3,6 +3,7 @@ import { STATIC_URL } from "../../asset/constant";
 import UploadHeader from "../../component/upload-header";
 import ItemSelectBox from "../../component/item-select-box";
 import PlaceSelectBox from "../../component/place-select-box";
+import PhotoUploader from "../../component/photo-uploader";
 import * as S from "./styles";
 
 const LostUploadContainer = () => {
@@ -34,6 +35,7 @@ const LostUploadContainer = () => {
               사진 첨부
             </S.PhotoContainer>
           </label>
+          <PhotoUploader/>
         </S.UploadContainer>
     </S.Wrapper>
   );
