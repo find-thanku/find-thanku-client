@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styles";
-import FoundPostPreview from "../../component/found-post-preview";
+import PostPreview from "../../component/post-preview";
 import foundBoardAPI from "../../common/lib/api/found-board";
 import { FoundPostModel } from "../../common/model/found-post";
 import { STATIC_URL } from "../../asset/constant";
@@ -46,7 +46,7 @@ const FoundBoardContainer = () => {
           data.map((post, idx) => {
             const { title, item_name, get_place, reply_num, image_url } = post;
             return (
-              <FoundPostPreview
+              <PostPreview
                 key={idx}
                 title={title}
                 item={item_name}

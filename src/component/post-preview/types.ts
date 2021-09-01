@@ -1,4 +1,4 @@
-export interface FoundPostPreviewProps {
+export interface PostPreviewProps {
   title: string;
   item: string;
   location: string;

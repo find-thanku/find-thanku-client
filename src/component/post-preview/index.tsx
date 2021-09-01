@@ -1,12 +1,12 @@
 import React from "react";
 import * as S from "./styles";
 import { STATIC_URL } from "../../asset/constant";
-import { FoundPostPreviewProps } from "./types";
+import { PostPreviewProps } from "./types";
 
-const FoundPostPreview = (props: FoundPostPreviewProps) => {
+const PostPreview = (props: PostPreviewProps) => {
   const { title, item, location, image, replyCount } = props;
   return (
-    <S.FoundPostPreview>
+    <S.PostPreview>
       <S.TitleContainer>
         <S.Title>{title}</S.Title>
         <S.ReplyContainer>
@@ -26,8 +26,8 @@ const FoundPostPreview = (props: FoundPostPreviewProps) => {
         </S.ItemInfo>
         {image && <S.Image src={image} />}
       </S.Contents>
-    </S.FoundPostPreview>
+    </S.PostPreview>
   );
 };
 
-export default FoundPostPreview;
+export default PostPreview;
