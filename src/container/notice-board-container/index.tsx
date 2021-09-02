@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styles";
-import PostPreview from "../../component/post-preview";
-import foundBoardAPI from "../../common/lib/api/found-board";
-import { FoundPostModel } from "../../common/model/found-post";
+import NoticePreview from "../../component/notice-preview";
+import noticeBoardAPI from "../../common/lib/api/notice-board";
+import { NoticePostModel } from "../../common/model/notice-post";
 import { STATIC_URL } from "../../asset/constant";
 
-const FoundBoardContainer = () => {
+const NoticeBoardContainer = () => {
   const [page, setPage] = useState(1);
-  const [data, setData] = useState([] as FoundPostModel[]);
+  const [data, setData] = useState([] as NoticePostModel[]);
   const [searchClicked, setSearchClicked] = useState(false);
 
   const getPostList = async (page: number) => {
-    const result = await foundBoardAPI.getPostList(page);
+    const result = await noticeBoardAPI.getPostList(page);
     const data = result.data;
     setData(data);
   };
@@ -25,9 +25,9 @@ const FoundBoardContainer = () => {
   }, [page]);
 
   return (
-    <S.FoundBoardContainer>
+    <S.NoticeBoardContainer>
       <S.CategoryContainer>
-        <S.Category searchClicked={searchClicked}>습득물</S.Category>
+        <S.Category searchClicked={searchClicked}>공지사항</S.Category>
         <S.SearchContainer searchClicked={searchClicked}>
           <S.SearchIcon src={STATIC_URL.SEARCH} onClick={toggleSearch} />
           <S.SearchInput
@@ -44,24 +44,19 @@ const FoundBoardContainer = () => {
       <S.PostContainer>
         {data &&
           data.map((post, idx) => {
-            const { title, item_name, get_place, reply_num, image_url } = post;
+            const { title, content, image_url } = post;
             return (
-              <PostPreview
+              <NoticePreview
                 key={idx}
                 title={title}
-                item={item_name}
-                location={get_place}
-                replyCount={reply_num}
+                content={content}
                 image={image_url}
               />
             );
           })}
-        <S.WriteButton>
-          <S.PlusIcon src={STATIC_URL.WHITE_PLUS_ICON} />
-        </S.WriteButton>
       </S.PostContainer>
-    </S.FoundBoardContainer>
+    </S.NoticeBoardContainer>
   );
 };
 
-export default FoundBoardContainer;
+export default NoticeBoardContainer;

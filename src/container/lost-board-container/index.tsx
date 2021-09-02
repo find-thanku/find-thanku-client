@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styles";
 import PostPreview from "../../component/post-preview";
-import foundBoardAPI from "../../common/lib/api/found-board";
-import { FoundPostModel } from "../../common/model/found-post";
+import lostBoardAPI from "../../common/lib/api/lost-board";
+import { LostPostModel } from "../../common/model/lost-post";
 import { STATIC_URL } from "../../asset/constant";
 
-const FoundBoardContainer = () => {
+const LostBoardContainer = () => {
   const [page, setPage] = useState(1);
-  const [data, setData] = useState([] as FoundPostModel[]);
+  const [data, setData] = useState([] as LostPostModel[]);
   const [searchClicked, setSearchClicked] = useState(false);
 
   const getPostList = async (page: number) => {
-    const result = await foundBoardAPI.getPostList(page);
+    const result = await lostBoardAPI.getPostList(page);
     const data = result.data;
     setData(data);
   };
@@ -25,9 +25,9 @@ const FoundBoardContainer = () => {
   }, [page]);
 
   return (
-    <S.FoundBoardContainer>
+    <S.LostBoardContainer>
       <S.CategoryContainer>
-        <S.Category searchClicked={searchClicked}>습득물</S.Category>
+        <S.Category searchClicked={searchClicked}>분실물</S.Category>
         <S.SearchContainer searchClicked={searchClicked}>
           <S.SearchIcon src={STATIC_URL.SEARCH} onClick={toggleSearch} />
           <S.SearchInput
@@ -44,13 +44,13 @@ const FoundBoardContainer = () => {
       <S.PostContainer>
         {data &&
           data.map((post, idx) => {
-            const { title, item_name, get_place, reply_num, image_url } = post;
+            const { title, item_name, lost_place, reply_num, image_url } = post;
             return (
               <PostPreview
                 key={idx}
                 title={title}
                 item={item_name}
-                location={get_place}
+                location={lost_place}
                 replyCount={reply_num}
                 image={image_url}
               />
@@ -60,8 +60,8 @@ const FoundBoardContainer = () => {
           <S.PlusIcon src={STATIC_URL.WHITE_PLUS_ICON} />
         </S.WriteButton>
       </S.PostContainer>
-    </S.FoundBoardContainer>
+    </S.LostBoardContainer>
   );
 };
 
-export default FoundBoardContainer;
+export default LostBoardContainer;

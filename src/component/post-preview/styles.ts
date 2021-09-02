@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { THEME_COLOR } from "../../asset/constant";
 
-export const FoundPostPreview = styled.div`
+export const PostPreview = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
