@@ -31,15 +31,9 @@ const MainContainer = () => {
 
   useEffect(() => {
     if (lostCount < lost) increaseLostCount();
-  }, [lostCount]);
-
-  useEffect(() => {
     if (foundCount < found) increaseFoundCount();
-  }, [foundCount]);
-
-  useEffect(() => {
     if (visitorCount < visitor) increaseVisitorCount();
-  }, [visitorCount]);
+  });
 
   return (
     <S.MainContainer>
