@@ -25,4 +25,7 @@ export const STATIC_URL = {
   CAMERA: `https://user-images.githubusercontent.com/50616334/131724701-679fdcde-df00-40de-bd74-c9df11966278.png`,
   X_MARK: `https://user-images.githubusercontent.com/50616334/131725487-3380d77a-3d24-4822-bc3a-b8f02283a5b1.png`,
   X_MARK_WHITE: `https://user-images.githubusercontent.com/50616334/131726258-50e42b72-e282-43cb-9e53-a2371018e0cc.png`,
+  WHITE_PLUS_ICON: `https://user-images.githubusercontent.com/46309902/129130829-4d342427-719b-4bc6-9f2c-f0fbdae92689.png`,
+  SEARCH: `https://user-images.githubusercontent.com/46309902/129131150-946eb4c8-48f9-4cf7-9aef-18bdc58bf0cc.png`,
+  CLOSE: `https://user-images.githubusercontent.com/46309902/129339675-68bfa4f4-4f6e-4b9d-9828-784964c188f0.png`,
 };

@@ -1,25 +1,55 @@
 import styled from "styled-components";
+import { THEME_COLOR } from "../../asset/constant";
 
 export const FoundPostPreview = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-evenly;
+  width: 95%;
   height: 8rem;
+  margin: 0.5rem;
   padding: 1rem;
-  border-bottom: 2px solid lightgray;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.05rem ${THEME_COLOR.DARK_VIOLET};
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1.7rem;
+  font-weight: bold;
 `;
 
 export const Title = styled.div`
+  width: 85%;
   font-size: 1.2rem;
-  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+`;
+
+export const ReplyContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: #d3d8f0;
+  border-radius: 50%;
+`;
+
+export const Reply = styled.div`
+  font-size: 1rem;
+  color: ${THEME_COLOR.DARK_VIOLET};
 `;
 
 export const Contents = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0rem;
 `;
 
 export const ItemInfo = styled.div`
@@ -30,6 +60,7 @@ export const ItemInfo = styled.div`
 
 export const ItemContainer = styled.div`
   display: flex;
+  justify-content: flex-start;
   margin-bottom: 0.5rem;
 `;
 
@@ -45,7 +76,7 @@ export const Item = styled.div`
 
 export const LocationContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const Location = styled.div`
@@ -55,5 +86,5 @@ export const Location = styled.div`
 export const Image = styled.img`
   height: 3.5rem;
   width: 3.5rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 `;
