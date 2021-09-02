@@ -1,8 +1,9 @@
 import React, { useMemo } from "react";
 import Select from "react-select";
 import { THEME_COLOR } from "../../asset/constant";
+import { PlaceSelectBoxProps } from "./types";
 
-const PlaceSelectBox = ()  => {
+const PlaceSelectBox = (props: PlaceSelectBoxProps)  => {
   const options = useMemo(
     () => [
       { value: "하나스퀘어", label: "하나스퀘어" },
@@ -17,7 +18,7 @@ const PlaceSelectBox = ()  => {
       <>
       <Select 
         maxMenuHeight = {110}
-        placeholder="Select"
+        placeholder={props.placeholder}
         styles={{
           option: (provided, state) => ({
             ...provided,
