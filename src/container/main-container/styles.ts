@@ -20,9 +20,9 @@ export const Intro = styled.div`
   flex-direction: column;
   justify-content: space-between;
   width: 85%;
-  height: 20rem;
+  height: 18rem;
   margin: 2rem 0rem;
-  padding: 2rem;
+  padding: 1.8rem;
   background-color: white;
   border-radius: 2rem;
 
@@ -36,6 +36,28 @@ export const ProjectIntro = styled.div`
   font-weight: 400;
   line-height: 1.5rem;
 `;
+
+export const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: ${THEME_COLOR.DARK_VIOLET};
+`;
+
+export const Line1 = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.3rem;
+`;
+
+export const Line2 = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const Contents = styled.div``;
 
 export const CountInfoContainer = styled.div`
   display: flex;

@@ -39,9 +39,14 @@ const MainContainer = () => {
     <S.MainContainer>
       <S.Intro>
         <S.ProjectIntro>
-          누구나 잃어 버린 물건을 쉽게 찾을 수 있도록 ! 찾아 주셔서 (FIN:D)
-          고맙습니다 (THANKU) 의 의미를 담고 있는 FIN:D THANKU는 고려대학교
-          구성원을 위한 분실물 센터입니다.
+          <S.Title>
+            <S.Line1>찾아 주셔서 (FIN:D)</S.Line1>{" "}
+            <S.Line2>감사합니다 (THANKU)</S.Line2>
+          </S.Title>
+          <S.Contents>
+            누구나 잃어 버린 물건을 쉽게 찾을 수 있도록 ! FIN:D THANKU는
+            고려대학교 구성원을 위한 분실물 센터입니다.
+          </S.Contents>
         </S.ProjectIntro>
         <S.CountInfoContainer>
           <CountInfo title={"분실물"} count={lostCount}></CountInfo>
