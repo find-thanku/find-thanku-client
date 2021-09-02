@@ -63,7 +63,3 @@ export const CountInfoContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-
-export const Counts = styled.div``;
-
-export const Count = styled.div``;
