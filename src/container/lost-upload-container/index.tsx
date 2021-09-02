@@ -12,12 +12,10 @@ const LostUploadContainer = () => {
         <S.UploadContainer>
           <S.ItemContainer>
             <S.TypeContainer>
-                <S.SubText>분실물</S.SubText>
-                <ItemSelectBox/>
+                <ItemSelectBox placeholder="분실물"/>
             </S.TypeContainer>
             <S.TypeContainer>
-                <S.SubText>분실 장소</S.SubText>
-                <PlaceSelectBox/>
+                <PlaceSelectBox placeholder="분실 장소"/>
             </S.TypeContainer>
           </S.ItemContainer>
           <S.TitleContainer>

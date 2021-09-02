@@ -18,7 +18,6 @@ export const AddPhoto = styled.div`
   min-width: 6.5rem;
   height: 6.5rem;
   background-color: ${THEME_COLOR.GRAY};
-  border: 1px dashed black;
   margin: 0.3rem 0.3rem;
 `;
 
@@ -49,4 +48,25 @@ export const Delete = styled.img`
   
   position: absolute;
   right: 0px;
+`;
+
+export const UploadContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: ${THEME_COLOR.VIOLET};
+  color: white;
+  border-radius: 1.3rem;
+  z-index: 100;
+`;
+
+export const UploadButton = styled.img`
+  width: 1.8rem;
+  height: 1.8rem;
+  z-index: 100;
 `;
