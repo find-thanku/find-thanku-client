@@ -13,20 +13,23 @@ const MainContainer = () => {
 
   const increaseLostCount = () => {
     setTimeout(() => {
-      setLostCount(lostCount + 3);
-    }, 5);
+      if (lost - lostCount > 2) setLostCount(lostCount + 2);
+      else setLostCount(lost);
+    }, 10);
   };
 
   const increaseFoundCount = () => {
     setTimeout(() => {
-      setFoundCount(foundCount + 3);
-    }, 5);
+      if (found - foundCount > 2) setFoundCount(foundCount + 2);
+      else setFoundCount(found);
+    }, 10);
   };
 
   const increaseVisitorCount = () => {
     setTimeout(() => {
-      setVisitorCount(visitorCount + 10);
-    }, 5);
+      if (visitor - visitorCount > 10) setVisitorCount(visitorCount + 10);
+      else setVisitorCount(visitor);
+    }, 10);
   };
 
   useEffect(() => {
