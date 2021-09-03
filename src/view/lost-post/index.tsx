@@ -1,9 +1,10 @@
 import React from "react";
+import LostPostContainer from "../../container/lost-post-container";
 
 const LostPost = () => {
   return (
     <>
-      <div>Lost Post</div>
+      <LostPostContainer />
     </>
   );
 };

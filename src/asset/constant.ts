@@ -7,6 +7,7 @@ export const THEME_COLOR = {
   DARK_VIOLET: "#424874",
   GRAY: "#F1F1F1",
   GRAYER: "#EDEDED",
+  GRAY_TEXT: "#A9A9A9",
   CRIMSON: "#9C1817",
 };
 
@@ -28,4 +29,5 @@ export const STATIC_URL = {
   WHITE_PLUS_ICON: `https://user-images.githubusercontent.com/46309902/129130829-4d342427-719b-4bc6-9f2c-f0fbdae92689.png`,
   SEARCH: `https://user-images.githubusercontent.com/46309902/129131150-946eb4c8-48f9-4cf7-9aef-18bdc58bf0cc.png`,
   CLOSE: `https://user-images.githubusercontent.com/46309902/129339675-68bfa4f4-4f6e-4b9d-9828-784964c188f0.png`,
+  SUBMIT_VIOLET: `https://user-images.githubusercontent.com/50616334/132043473-c0a23d9a-d9eb-48c7-9c6c-ca5fb1b20d58.png`,
 };
