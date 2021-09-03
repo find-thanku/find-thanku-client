@@ -6,10 +6,10 @@ export const CountInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4.8rem;
+  height: 4.8rem;
   background-color: ${THEME_COLOR.GRAYER};
-  border-radius: 1rem;
+  border-radius: 50%;
 `;
 
 export const Title = styled.div`
