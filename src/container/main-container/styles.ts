@@ -25,6 +25,7 @@ export const Intro = styled.div`
   padding: 1.8rem;
   background-color: white;
   border-radius: 2rem;
+  box-shadow: 0rem 0rem 0.8rem 0.01rem ${THEME_COLOR.DARK_VIOLET};
 
   @media only screen and (min-width: ${BREAKPOINT}px) {
     background-color: white;
