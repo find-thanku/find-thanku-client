@@ -5,7 +5,7 @@ export const LatestPosts = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 18rem;
+  width: 85%;
   height: 10rem;
   margin: 1rem 0rem;
   background-color: ${THEME_COLOR.GRAY};
