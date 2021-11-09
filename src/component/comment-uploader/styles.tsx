@@ -1,35 +1,20 @@
 import styled from "styled-components/macro";
 import { THEME_COLOR, BREAKPOINT, STATIC_URL } from "../../asset/constant";
 
-export const Footer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 375px;
-  height: 5%;
-
-  position: fixed;
-  bottom: 0;
-
-  margin-top: 1rem;
-
-  background-color: white;
-
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    display: none;
-  }
+export const CommentUploader = styled.div`
 `;
 
 export const InputContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 2px solid ${THEME_COLOR.GRAYER};
-  background-color: white;
-  width: 100%;
-  height: 3rem;
-  padding: 0.3rem;
+  border: 2px solid ${THEME_COLOR.GRAYER};
 
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.4rem;
+  margin-top: 0.6rem;
+  background-color:${THEME_COLOR.GRAY};
 `;
 
 export const Input = styled.textarea`
@@ -38,6 +23,7 @@ export const Input = styled.textarea`
   resize: none;
   border: none;
   outline: none;
+  background-color:${THEME_COLOR.GRAY};
 `;
 
 export const SubmitButton = styled.img`
