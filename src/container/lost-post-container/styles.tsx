@@ -73,22 +73,17 @@ export const Icon = styled.img`
 
 export const PhotoContainer = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
-  flex-flow: scroll;
-  overflow-x: auto;
-  align-items: center;
-  width: 100%;
-  height: 250px;
+  justify-content: center;
+  object-fit: contain;
+  border: 10px solid black;
 `;
 
 export const Images = styled.img`
-  /* width: 10rem; */
-  /* height: 10rem; */
   width: 100%;
   height: 100%;
-  margin-bottom: 0.7rem;
-  margin-right: 0.5rem;
+  object-fit: contain;
 `;
 
 export const Content = styled.div`
