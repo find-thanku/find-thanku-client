@@ -33,11 +33,11 @@ export const DateContainer = styled.div`
 `;
 
 export const Date = styled.div`
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: ${THEME_COLOR.GRAY_TEXT};
 `;
 
 export const CommentContent = styled.div`
   margin-left: 0.2rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;

@@ -7,14 +7,18 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 11%;
+  background-color: ${THEME_COLOR.VIOLET};
 `;
 
 export const PostContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 90%;
+  height: 100%;
+  margin: 2rem 0rem;
   padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  background-color: white;
 `;
 
 export const PostHeader = styled.div`
@@ -22,21 +26,20 @@ export const PostHeader = styled.div`
 `;
 
 export const Board = styled.div`
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: bold;
   color: ${THEME_COLOR.DARK_VIOLET};
   margin-bottom: 0.3rem;
 `;
 
 export const Title = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
 `;
 
 export const LostInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 
   margin: 0.7rem 0rem;
@@ -53,7 +56,7 @@ export const ItemContainer = styled.div`
 `;
 
 export const Item = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 
 export const LocationContainer = styled.div`
@@ -63,7 +66,7 @@ export const LocationContainer = styled.div`
 `;
 
 export const Location = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
 `;
 export const Icon = styled.img`
   height: 1rem;
@@ -87,9 +90,9 @@ export const Images = styled.img`
 `;
 
 export const Content = styled.div`
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-bottom: 0.7rem;
-  margin-bottom: 0.7rem;
+  margin: 1rem 0rem;
   border-bottom: 1px solid ${THEME_COLOR.GRAYER};
 `;
 

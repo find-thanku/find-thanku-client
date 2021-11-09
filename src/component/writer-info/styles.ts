@@ -25,5 +25,5 @@ export const Name = styled.div`
 `;
 
 export const Date = styled.div`
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 `;
